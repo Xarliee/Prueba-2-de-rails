@@ -1,4 +1,14 @@
 class Inventory < ActiveRecord::Base
-validates :serial_number, presence: true, allow_nil: false, uniqueness: true
+
+belongs_to :operation, dependent: :destroy
+
+validates :serial_number, presence: true, allow_nil: false
+validates_uniqueness_of :serial_number
+
+scope :all_inventory, -> { Inventory.all }
+
+
+
 
 end
+

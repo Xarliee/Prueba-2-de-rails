@@ -1,0 +1,14 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+clean:
+  description: clean bathroom
+  worker: juan
+
+repair:
+  description: repair wall
+  worker: juan 
+
+paint:
+  description: paint office 
+  worker: pedro 
+
